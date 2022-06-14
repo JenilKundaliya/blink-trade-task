@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    box-sizing: border-box;
 }
 
 a {
@@ -13,4 +14,129 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.landing-div{
+  padding: 0 3rem;
+}
+.blink-page.container-fluid{
+  padding:3rem;
+}
+.blink-header h2{
+  color: white;
+}
+.blink-header p{
+  color: #93A4B8;
+}
+.blink-card{
+  width: 24%;
+  
+  margin:0.5rem 0;
+  /* border-radius: 16px !important; */
+  border: none !important;
+}
+.blink-card .card-body{
+  background: #354157;;
+}
+.blink-card .card-body h5{
+  color: white;
+}
+.blink-card .card-body p{
+  color:#65758E
+}
+
+.invest-page.container-fluid{
+  padding: 3rem;
+}
+.investment-left{
+  width: 30%;
+}
+.investment-left h2{
+  color: white;
+}
+.investment-left p{
+  color: #93A4B8;
+}
+.blink-header button,.investment-left button{
+  background: #354157;
+border-radius: 50px;
+border: none;
+text-transform: uppercase;
+padding: 12px 36px;
+transition: all 0.5s ease;
+}
+.blink-header button:hover,.investment-left button:hover{
+  background: #222a38;
+}
+.investment-right{
+  width: 70%;
+}
+.invest-card{
+  width: 32%;
+  margin: 0.5rem 0;
+}
+
+
+@media only screen and (max-width:980px) {
+  .blink-card{
+    width: 33%;
+  }
+  .investment-left{
+    width: 100%;
+   }
+   .investment-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+   .investment-right{
+    width: 100%;
+   }
+}
+@media only screen and (max-width:750px) {
+  .landing-div{
+    padding: 0 1rem;
+  }
+  .blink-page{
+    padding:3rem 1rem !important
+  }
+  .invest-page{
+    padding: 3rem 1rem !important;
+  }
+  .blink-card{
+    width: 48%;
+  }
+ .investment-left{
+  width: 100%;
+ }
+ .investment-right{
+  width: 100%;
+ }
+}
+@media only screen and (max-width:480px) {
+  .landing-div{
+    padding: 0 0.5rem;
+  }
+  .blink-page{
+    padding:3rem 0.5rem !important
+  }
+  .invest-page{
+    padding: 3rem 0.5rem !important;
+  }
+  .blink-header button{
+    display: none;
+  }
+  .blink-card{
+    width: 96%;
+    margin: 0.5rem auto;
+    flex-direction: row !important;
+    background: none !important;
+  }
+  .blink-card .card-body{
+    padding: 0 !important;
+  }
+
+  .blink-card .card-body a{
+display: none;
+  }
 }
