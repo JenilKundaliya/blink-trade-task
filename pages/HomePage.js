@@ -2,6 +2,10 @@ import React from 'react'
 import Image from "next/image"
 import mainImg from "../public/bg_cover_dark.png"
 import InvestCard from '../components/InvestCard'
+import Header from '../components/Header'
+import KnowledgeCard from '../components/KnowledgeCard'
+import SliderCard from '../components/SliderCard'
+import OfferCard from '../components/OfferCard'
 // 2F313C
 function HomePage() {
   return (
@@ -17,6 +21,7 @@ function HomePage() {
           </div>
 
         </div>
+<<<<<<< HEAD
       </div>
       <div className='blink-page container-fluid' style={{ backgroundColor: "black" }}>
         <div className='blink-header d-flex flex-row justify-content-between' style={{ height: "80px" }}>
@@ -34,6 +39,55 @@ function HomePage() {
             <div className='card-top'>
               <img class="card-img-top" src="/usp-dark1.png" alt="Card image cap"></img>
             </div>
+=======
+    </div>
+    <div className='page-style blink-page container-fluid' style={{backgroundColor:"black"}}>
+
+<Header title="Why Blinktrade" desc="Discover why we are the best investment option" btn="Know More" />
+<div className='blink-cards d-flex flex-xs-column flex-sm-row flex-wrap justify-content-between align-items-center' style={{margin:"1rem 0"}}>
+    
+<div className="card-style blink-card card" >
+  <div className='card-top'>
+ <img class="card-img-top" src="/usp-dark1.png" alt="Card image cap"></img>
+  </div>
+ 
+  <div className="card-body">
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    
+  </div>
+</div>
+<div className="card-style blink-card card ">
+<div className='card-top'>
+ <img class="card-img-top" src="/USP2 - Dark.png" alt="Card image cap"></img>
+  </div>
+
+  <div className="card-body">
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+<div className="card-style blink-card card " >
+<div className='card-top'>
+ <img class="card-img-top" src="/USP4 - Dark.png" alt="Card image cap"></img>
+  </div>
+  <div className="card-body">
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    
+  </div>
+</div>
+<div className="card-style blink-card card " >
+<div className='card-top'>
+ <img className="card-img-top" src="/USP3 - Dark.png" alt="Card image cap"></img>
+  </div>
+  <div className="card-body">
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    
+  </div>
+</div>
+>>>>>>> fc2efdcc5404a4553078d64ffbf190bfd2c4ccd1
 
             <div className="card-body">
               <h5 className="card-title">Card title</h5>
@@ -77,7 +131,11 @@ function HomePage() {
 
 
 
+<<<<<<< HEAD
       <div className='invest-page container-fluid d-flex flex-column flex-lg-row justify-content-between' style={{ backgroundColor: "black" }}>
+=======
+    <div className='page-style invest-page container-fluid d-flex flex-column flex-lg-row justify-content-between' style={{backgroundColor:"black"}}>
+>>>>>>> fc2efdcc5404a4553078d64ffbf190bfd2c4ccd1
         <div className='investment-left'>
           <div>
             <h2>Start Investment here</h2>
@@ -89,6 +147,7 @@ function HomePage() {
 
         </div>
         <div className='investment-right d-flex flex-wrap flex-row justify-content-between'>
+<<<<<<< HEAD
 
           <InvestCard src="/stock.png" />
           <InvestCard src="/mf.png" />
@@ -120,6 +179,35 @@ function HomePage() {
         </div>
         </div>
       
+=======
+       <InvestCard src="/stock.png"/>
+       <InvestCard src="/mf.png"/>
+       <InvestCard src="/ipo.png" />
+       <InvestCard src="/uss.png"/>
+       <InvestCard src="/fno.png"/>
+       <InvestCard src="/fds.png"/>
+        </div>
+        
+        
+    </div>
+
+
+    <div className='page-style know-page container-fluid ' style={{backgroundColor:"black"}}>
+      <Header title="Blinktrade Knowledgebase" desc="All investment options are here" btn="Know more" />
+      
+      {/* <div className='d-flex flex-xs-column flex-sm-row flex-wrap justify-content-between align-items-center' style={{margin:"1rem 0"}}> */}
+      <SliderCard know/>
+        {/* </div> */}
+    </div>
+
+    <div className='page-style offers-page container-fluid' style={{backgroundColor:"black"}}>
+      <Header title="Offers for you" desc="Don't we all love it" btn="know more" />
+      <SliderCard />
+      
+    </div>
+
+
+>>>>>>> fc2efdcc5404a4553078d64ffbf190bfd2c4ccd1
     </>
   )
 }
