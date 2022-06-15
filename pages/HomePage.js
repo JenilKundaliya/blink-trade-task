@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import KnowledgeCard from '../components/KnowledgeCard'
 import SliderCard from '../components/SliderCard'
 import OfferCard from '../components/OfferCard'
+import InvestForm from '../components/InvestForm'
 // 2F313C
 function HomePage() {
   return (
@@ -111,6 +112,8 @@ function HomePage() {
       <SliderCard />
       
     </div>
+
+    <InvestForm />
 
 
     </>
