@@ -160,6 +160,39 @@ transform: rotate(1.2deg);
  transform: translate(0,50%); */
 }
 
+
+.container2{
+  height: auto;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+}
+
+
+.jm{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  height: 15rem;
+  background-color: #10172A;
+  border-radius: 24px;
+  
+}
+
+.jm .item1{
+  background-color: #354157;
+  width: 15%;
+}
+
+
+.jm .box-jm{
+  /* background: #10172A; */
+}
+
+
 @media only screen and (max-width:1080px) {
   .btn.btn-style{
     padding: 5px 10px;
