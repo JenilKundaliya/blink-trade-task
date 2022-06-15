@@ -10,19 +10,23 @@ import InvestForm from '../components/InvestForm'
 // 2F313C
 function HomePage() {
   return (
-      <>
-    <div className='landing-page container-fluid' style={{height:"80vh",backgroundColor:"#2F313C"}}>
-        <div className='landing-div row' style={{height:"80vh"}}>
-            <div className='col-12 col-md-6 d-flex flex-column justify-content-center ' style={{padding:"0"}}>
-                <h1 style={{color:"white"}}>The next generation <br></br> trading experience</h1> 
-                <button className='btn' style={{background:`linear-gradient(10.2deg, #FA7415 0%, #D946EF 100%)`,marginTop:"1rem",fontSize:"18px",padding:"10px 30px",color:"white",borderRadius:"50px",fontWeight:"600",width:"243px",textTransform:"uppercase"}}>Get Started</button>
-            </div>
-            <div className='col-12 col-md-6 d-flex justify-content-end align-items-center'>
-                <Image src={mainImg} width={600} height={500}></Image>
-            </div>
+    <>
+      <div className='landing-page container-fluid' style={{ height: "80vh", backgroundColor: "#2F313C" }}>
+        <div className='landing-div row' style={{ height: "80vh" }}>
+          <div className='col-12 col-md-6 d-flex flex-column justify-content-center ' style={{ padding: "0" }}>
+            <h1 style={{ color: "white" }}>The next generation <br></br> trading experience</h1>
+            <button className='btn' style={{ background: `linear-gradient(10.2deg, #FA7415 0%, #D946EF 100%)`, marginTop: "1rem", fontSize: "18px", padding: "10px 30px", color: "white", borderRadius: "50px", fontWeight: "600", width: "243px", textTransform: "uppercase" }}>Get Started</button>
+          </div>
+          <div className='col-12 col-md-6 d-flex justify-content-end align-items-center'>
+            <Image src={mainImg} width={600} height={500}></Image>
+          </div>
 
         </div>
-    </div>
+
+      </div>
+
+        
+         
     <div className='page-style blink-page container-fluid' style={{backgroundColor:"black"}}>
 
 <Header title="Why Blinktrade" desc="Discover why we are the best investment option" btn="Know More" />
@@ -68,37 +72,49 @@ function HomePage() {
     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     
   </div>
-</div>
-
-</div>
-    </div>
-
-
+  </div>
+  </div>
+  </div>
 
     <div className='page-style invest-page container-fluid d-flex flex-column flex-lg-row justify-content-between' style={{backgroundColor:"black"}}>
         <div className='investment-left'>
-    <div>
-    <h2>Start Investment here</h2>
-    <p>All investment options are available</p>
-    </div>
-    <div>
-        <button className='btn-style btn btn-primary'>Know More</button>
-    </div>
-
+          <div>
+            <h2>Start Investment here</h2>
+            <p>All investment options are available</p>
+          </div>
+          <div>
+            <button className='btn-style btn btn-primary'>Know More</button>
+          </div>
         </div>
         <div className='investment-right d-flex flex-wrap flex-row justify-content-between'>
-       <InvestCard src="/stock.png"/>
-       <InvestCard src="/mf.png"/>
-       <InvestCard src="/ipo.png" />
-       <InvestCard src="/uss.png"/>
-       <InvestCard src="/fno.png"/>
-       <InvestCard src="/fds.png"/>
+          <InvestCard src="/stock.png" />
+          <InvestCard src="/mf.png" />
+          <InvestCard src="/ipo.png" />
+          <InvestCard src="/uss.png" />
+          <InvestCard src="/fno.png" />
+          <InvestCard src="/fds.png" />
         </div>
-        
-        
-    </div>
 
+      </div>
+     
+      <div className='container2' style={{backgroundColor: "black"}}>
+        <div className="jm" >
+          <div className='card-top box-jm'>
+            <img className="card-img-top jm-img" src="/jm.png" alt="Card image cap"></img>
+          </div>
+          <div className="card-body">
+            <h5 className="card-title" style={{color: "#CCD6E2"}}>DOWNLOAD APP</h5>
+            <h3 className="card-title" style={{color: "#F7FBFE"}}>Get Blinktrade on any device</h3>
+            
+            <div className="card-body item1">
+            <img className="jm-img rounded float-left" src="/Vector.png" alt="Card image cap"></img>
+              <p className="card-text">Web</p>
 
+            </div>
+          </div>
+        </div>
+        </div>
+      
     <div className='page-style know-page container-fluid ' style={{backgroundColor:"black"}}>
       <Header title="Blinktrade Knowledgebase" desc="All investment options are here" btn="Know more" />
       
@@ -120,4 +136,4 @@ function HomePage() {
   )
 }
 
-export default HomePage
+export default HomePage;
