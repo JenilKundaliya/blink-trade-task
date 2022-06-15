@@ -15,6 +15,23 @@ a {
 * {
   box-sizing: border-box;
 }
+/* defined classes */
+.btn.btn-style{
+  color:  #E4E8F1;
+  background: #354157;
+  border-radius: 50px;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 36px;
+  transition: all 0.5s ease;
+  font-weight: 600;
+  margin-bottom: 0.5rem !important;
+}
+.btn.btn-style:hover{
+  color:  #E4E8F1;
+  background: #222a38;
+}
+
 
 .landing-div{
   padding: 0 3rem;
@@ -29,14 +46,35 @@ a {
   color: #93A4B8;
 }
 .blink-card{
-  width: 24%;
-  
+  width: 24%; 
   margin:0.5rem 0;
-  /* border-radius: 16px !important; */
+  border-radius: 16px !important;
   border: none !important;
+  overflow: hidden;
+  background-color: black !important;
+}
+.blink-card .card-top{
+  height: 210px;
+  position: relative;
+  z-index: 1;
+  background: #20283b;
+
+}
+.blink-card .card-top img{
+  width: 276px;
+  /* height: 250px; */
+  position: absolute;
+  filter: drop-shadow(0px 8px 14px rgba(0, 0, 0, 0.48));
+  left: 50%;
+top: 60%;
+transform: translate(-50%,-50%);
+  /* top: 10px; */
 }
 .blink-card .card-body{
-  background: #354157;;
+  background: #354157;
+  z-index: 500;
+  /* border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px; */
 }
 .blink-card .card-body h5{
   color: white;
@@ -47,9 +85,10 @@ a {
 
 .invest-page.container-fluid{
   padding: 3rem;
+  padding-top: 0rem !important;
 }
 .investment-left{
-  width: 30%;
+  width: 40%;
 }
 .investment-left h2{
   color: white;
@@ -57,27 +96,74 @@ a {
 .investment-left p{
   color: #93A4B8;
 }
-.blink-header button,.investment-left button{
-  background: #354157;
-border-radius: 50px;
-border: none;
-text-transform: uppercase;
-padding: 12px 36px;
-transition: all 0.5s ease;
-}
-.blink-header button:hover,.investment-left button:hover{
-  background: #222a38;
-}
+
+
+
 .investment-right{
-  width: 70%;
+  width: 60%;
 }
 .invest-card{
   width: 32%;
   margin: 0.5rem 0;
+  background-color: black !important;
+  border: none !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+.invest-card .card-top{
+  position: relative;
+ height: 130px;
+ background: #10172A;
+}
+.invest-card .card-top p{
+  position: absolute;
+  color: #F7FBFE;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  top: 12px;
+  left: 13px;
+ 
+}
+.invest-card .card-top img{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  /* left: calc(50% - 149.65px/2 + 80.41px);
+  top: calc(50% - 149.65px/2 + 18.54px); */
+  right:2px;
+  top: 25px;
+  /* mix-blend-mode: normal; */
+/* filter: drop-shadow(0px 8px 14px rgba(0, 0, 0, 0.48)); */
+transform: rotate(1.2deg);
+}
+.invest-card .card-body{
+  background: #20283B;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* z-index: 500; */
 }
 
+.invest-card .card-body p{
+  color: #E4E8F1;
+  
+  /* font-style: normal; */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
 
-@media only screen and (max-width:980px) {
+}
+.invest-btn{
+ /* position: absolute; */
+ /* left: 50%;
+ transform: translate(0,50%); */
+}
+
+@media only screen and (max-width:1080px) {
+  .btn.btn-style{
+    padding: 5px 10px;
+  }
   .blink-card{
     width: 33%;
   }
@@ -94,6 +180,7 @@ transition: all 0.5s ease;
    }
 }
 @media only screen and (max-width:750px) {
+  
   .landing-div{
     padding: 0 1rem;
   }
@@ -111,6 +198,12 @@ transition: all 0.5s ease;
  }
  .investment-right{
   width: 100%;
+ }
+ .invest-card .card-body{
+  padding: 1rem 0.5rem;
+ }
+ .invest-btn{
+  padding: 5px !important;
  }
 }
 @media only screen and (max-width:480px) {
@@ -132,11 +225,49 @@ transition: all 0.5s ease;
     flex-direction: row !important;
     background: none !important;
   }
+  .blink-card .card-top{
+    border-radius: 12px !important;
+    width: 120px !important;
+    height: 100px !important;
+
+    /* width: 40% !important; */
+  }
+  .blink-card .card-top img{
+    width: 120px;
+    height: 120px;
+    top: 65% !important;
+  }
   .blink-card .card-body{
-    padding: 0 !important;
+    width: 60% !important;
+    background:none !important;
+    padding: 0 5px !important;
   }
 
   .blink-card .card-body a{
 display: none;
+  }
+  .blink-card .card-body h5{
+    font-size: 16px;
+  }
+  .blink-card .card-body p{
+    font-size: 12px;
+  }
+  .investment-left{
+    flex-direction: column;
+  }
+  .invest-card .card-top img{
+    width: 120px;
+    height: 120px;
+  }
+  .invest-card .card-body{
+    display: none;
+    
+  }
+  
+}
+@media only screen and (max-width:320px) {
+  .invest-card .card-top img{
+    width: 100px;
+    height: 100px;
   }
 }
