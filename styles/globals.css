@@ -5,6 +5,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     box-sizing: border-box;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+   
 }
 
 a {
@@ -14,6 +17,7 @@ a {
 
 * {
   box-sizing: border-box;
+
 }
 /* defined classes */
 .btn.btn-style{
@@ -31,21 +35,22 @@ a {
   color:  #E4E8F1;
   background: #222a38;
 }
+.page-style{
+  padding: 3rem !important;
+}
 
 
 .landing-div{
   padding: 0 3rem;
 }
-.blink-page.container-fluid{
-  padding:3rem;
-}
+
 .blink-header h2{
   color: white;
 }
 .blink-header p{
   color: #93A4B8;
 }
-.blink-card{
+.card-style{
   width: 24%; 
   margin:0.5rem 0;
   border-radius: 16px !important;
@@ -53,14 +58,14 @@ a {
   overflow: hidden;
   background-color: black !important;
 }
-.blink-card .card-top{
+.card-style .card-top{
   height: 210px;
   position: relative;
   z-index: 1;
   background: #20283b;
 
 }
-.blink-card .card-top img{
+.card-style .card-top img{
   width: 276px;
   /* height: 250px; */
   position: absolute;
@@ -70,21 +75,20 @@ top: 60%;
 transform: translate(-50%,-50%);
   /* top: 10px; */
 }
-.blink-card .card-body{
+.card-style .card-body{
   background: #354157;
   z-index: 500;
   /* border-bottom-right-radius: 16px;
   border-bottom-left-radius: 16px; */
 }
-.blink-card .card-body h5{
+.card-style .card-body h5{
   color: white;
 }
-.blink-card .card-body p{
+.card-style .card-body p{
   color:#65758E
 }
 
 .invest-page.container-fluid{
-  padding: 3rem;
   padding-top: 0rem !important;
 }
 .investment-left{
@@ -154,11 +158,43 @@ transform: rotate(1.2deg);
   line-height: 15px;
 
 }
-.invest-btn{
- /* position: absolute; */
- /* left: 50%;
- transform: translate(0,50%); */
+
+/* Knowledge container styling */
+.know-card .card-body h5{
+  font-size: 18px !important;
+  font-weight: 500;
+  line-height: 30px;
 }
+.know-card .card-body p{
+  margin: 0 !important;
+}
+
+.know-card,.offer-card{
+  width: 96% !important;
+  cursor: pointer;
+}
+.slick-dots li.slick-active{
+  color: white;
+  /* background-color: white; */
+  /* border-radius: 50%; */
+}
+.slick-dots li.slick-active button::before{
+  color: white !important;
+}
+.slick-dots li button::before{
+  color: white !important;
+}
+
+
+/* offer page styling */
+.offer-card .card-top{
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
 
 @media only screen and (max-width:1080px) {
   .btn.btn-style{
@@ -184,12 +220,10 @@ transform: rotate(1.2deg);
   .landing-div{
     padding: 0 1rem;
   }
-  .blink-page{
-    padding:3rem 1rem !important
-  }
-  .invest-page{
+  .page-style{
     padding: 3rem 1rem !important;
   }
+  
   .blink-card{
     width: 48%;
   }
@@ -210,12 +244,10 @@ transform: rotate(1.2deg);
   .landing-div{
     padding: 0 0.5rem;
   }
-  .blink-page{
+  .page-style{
     padding:3rem 0.5rem !important
   }
-  .invest-page{
-    padding: 3rem 0.5rem !important;
-  }
+
   .blink-header button{
     display: none;
   }
@@ -225,11 +257,13 @@ transform: rotate(1.2deg);
     flex-direction: row !important;
     background: none !important;
   }
+  .know-card{
+    flex-direction: column !important;
+  }
   .blink-card .card-top{
     border-radius: 12px !important;
     width: 120px !important;
     height: 100px !important;
-
     /* width: 40% !important; */
   }
   .blink-card .card-top img{
